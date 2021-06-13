@@ -17,6 +17,7 @@ func SetCookie(writer http.ResponseWriter, request *http.Request) {
 	fmt.Fprint(writer, "success create cookie")
 }
 
+
 func GetCookie(writer http.ResponseWriter, request *http.Request) {
 	cookie, err := request.Cookie("X-PZN-Name")
 	if err != nil {
